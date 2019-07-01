@@ -9,7 +9,10 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Home } from "./component/home.js";
+import { Numeromayor } from "./component/numeromayor";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(
+	<Numeromayor A={5} B={4} C={6} />,
+	document.querySelector("#app")
+);
